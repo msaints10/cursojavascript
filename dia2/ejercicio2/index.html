@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos</title>
+    <script>
+        // ciclos
+        // for
+        for (let i = 0; i < 10; i++) {
+            console.log("for: " + i);
+        }
+        // while
+        let j = 0;
+        while (j < 10) {
+            console.log("while: " + j);
+            j++;
+        }
+        // do while
+        let k = 0;
+        do {
+            console.log("do while: " + k);
+            k++;
+        } while (k < 10);
+        // for in
+        let persona = {
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 25
+        };
+        for (const key in persona) {
+            console.log("for in: " + key + " = " + persona[key]);
+        }
+        console.log(persona.nombre);
+
+        // for of
+        let colores = [{
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 25
+        }, "hola", 1];
+        for (const color of colores) {
+            console.log(color);
+        }
+
+        // break
+        for (let i = 0; i < 10; i++) {
+            if (i == 5) {
+                break;
+            }
+            console.log("break: " + i);
+        }
+
+        // continue
+        for (let i = 0; i < 10; i++) {
+            if (i == 5) {
+                continue;
+            }
+            console.log("continue: " + i);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

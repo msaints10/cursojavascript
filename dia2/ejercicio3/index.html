@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script>
+        // funciones
+        function saludar() {
+            console.log("hola");
+        }
+        // funciones con nombre camel case
+        function saludarPersona(nombre, apellido) {
+            console.log("hola " + nombre + " " + apellido);
+            // ciclo for
+            for (let i = 0; i < 10; i++) {
+                console.log("for: " + i);
+            }
+        }
+        // funciones con nombre snake case
+        function saludar_persona(nombre, apellido) {
+            console.log("hola " + nombre + " " + apellido);
+            return false;
+        }
+        // funciones con nombre pascal case
+        function SaludarPersona(nombre, apellido) {
+            console.log("hola " + nombre + " " + apellido);
+        }
+        console.log(saludar());
+        console.log(saludarPersona("Juan", "Perez"));
+        console.log(saludar_persona("Juan", "Perez"));
+
+        let resultadoevaluacion = saludar_persona("Juan", "Perez");
+        if (resultadoevaluacion) {
+            console.log("saludar persona retorno true");
+        } else {
+            console.log("saludar persona retorno false");
+        }
+
+        // funciones anonimas
+        let saludarPersonaAnonima = function (nombre, apellido) {
+            console.log("hola " + nombre + " " + apellido);
+        }
+
+        console.log(saludarPersonaAnonima("Juan", "Perez"));
+
+        // funciones flecha
+        let saludarPersonaFlecha = (nombre, apellido) => {
+            console.log("hola " + nombre + " " + apellido);
+        }
+
+        console.log(saludarPersonaFlecha("Juan", "Perez"));
+
+        // funciones flecha con un solo parametro
+        let saludarPersonaFlechaUnParametro = nombre => {
+            console.log("hola " + nombre);
+            return 2;
+        }
+
+        // void => vacio => no retorna nada
+        // undefined => no definido => no retorna nada
+        // null => nulo => no retorna nada
+        console.log(saludarPersonaFlechaUnParametro("Juan"));
+
+        // funciones flecha sin parametros
+        let saludarPersonaFlechaSinParametros = () => {
+            console.log("hola");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

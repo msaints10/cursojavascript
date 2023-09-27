@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        // arrays  de strings
+        let colores = ["rojo", "verde", "azul"];
+        console.log(colores);
+        console.log(colores[1]);
+
+        // arrays de numeros
+        let numeros = [1, 2, 3];
+        console.log(numeros);
+        console.log(numeros[1]);
+
+        // arrays de objetos
+        let personas = [{
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 25
+        }, {
+            nombre: "Maria",
+            apellido: "Gomez",
+            edad: 30
+        }];
+        console.log(personas);
+        console.log(personas[1].edad);
+
+        // arrays de arrays
+        let colores2 = ["rojo", "verde", "azul"];
+        let numeros2 = [1, 2, 3];
+        let personas2 = [{
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 25
+        }, {
+            nombre: "Maria",
+            apellido: "Gomez",
+            edad: 30
+        }];
+        let arrays = [colores2, numeros2, personas2];
+        console.log(arrays);
+
+        // arrays de arrays de arrays
+        let colores3 = ["rojo", "verde", "azul"];
+        let numeros3 = [1, 2, 3];
+        let personas3 = [{
+            nombre: "Juan",
+            apellido: "Perez",
+            edad: 25
+        }, {
+            nombre: "Maria",
+            apellido: "Gomez",
+            edad: 30
+        }];
+        let arrays2 = [colores3, numeros3, personas3];
+        let arrays3 = [arrays2, arrays2, arrays2];
+        console.log(arrays3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
